@@ -182,7 +182,9 @@ body {
   z-index: 300;
   transform: rotate(270deg);
 }
-
+body {
+  background-color: red;
+}
 /* Ideologia */
 .ideologia {
   margin-top: 145px;
