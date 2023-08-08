@@ -36,73 +36,45 @@ body {
 }
 
 /* Navegação */
-.header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background: #fafafa;
-}
-.header div {
+
+.linkBar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-.navegacao li {
-  position: relative;
-}
-.navegacao li:hover ul {
-  display: block;
-}
-.navegacao li ul {
-  animation: toDown 0.3s forwards;
-  min-width: 150px;
-  display: none;
-  position: absolute;
-  background: white;
-  z-index: 2000;
-  padding: 8px 10px;
-  margin: 0;
-  bottom: -110px;
-  border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-.navegacao li ul li a::after {
-  display: none;
-}
-.navegacao li ul li + li {
-  border-top: 1px rgba(0, 0, 0, 0.2) solid;
-}
-.navegacao li ul li a {
-  padding: 10px 5px;
-  margin: 0;
-}
-.navegacao li ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.navegacao {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  padding:10px 0;
   font-size: 0.875rem;
 }
-.navegacao li a {
-  display: block;
-  color: black;
-  padding: 40px 0;
-  position: relative;
+.linkBar > div {
+  display:flex;
+  align-items: center;
+  gap:20px;
+  /* padding:0 20px; */
 }
-.navegacao li a:after {
-  transition: 0.3s;
-  content: "";
-  width: 0;
-  height: 3px;
-  background-color: #100953;
-  display: block;
-  position: absolute;
-  left: -5px;
+.linkBarRedes button {
+  padding:5px 10px;
 }
-.navegacao li a:hover:after {
-  width: 75%;
+.linkBarRedes {
+  display: flex;
+  align-items: center;
+  gap:0.875rem;
 }
+.header {
+  background: #fafafa;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.headerContent {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:25px 0;
+}
+.navegacao ul {
+  display:flex;
+  align-items: center;
+  gap:30px;
+}
+
+
 
 /* Introducao */
 .introducao {
