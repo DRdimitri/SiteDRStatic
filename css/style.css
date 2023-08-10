@@ -7,6 +7,12 @@
 }
 :root {
   --bg-p1: #f1f1f1;
+  --bg-p2: #fafafa;
+  --p1: #100953;
+  --p2: #061ef4;
+  --font1: #141414;
+  --font2: #454545;
+  --font3: #fafafa;
 }
 body {
   background: var(--bg-p1);
@@ -35,46 +41,68 @@ body {
   position: absolute;
 }
 
-/* Navegação */
-
+/* Header */
 .linkBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:10px 0;
+  padding: 8px 0;
   font-size: 0.875rem;
 }
-.linkBar > div {
-  display:flex;
-  align-items: center;
-  gap:20px;
-  /* padding:0 20px; */
+.linkBar a {
+  color: #454545;
 }
-.linkBarRedes button {
-  padding:5px 10px;
+.linkBar a:hover {
+  color: #100953;
 }
-.linkBarRedes {
+.linkBar .contactBar {
   display: flex;
   align-items: center;
-  gap:0.875rem;
+  gap: 20px;
+}
+.fontAcessible {
+  display: flex;
+  gap: 10px;
+}
+.fontAcessible button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: #454545;
+}
+.fontAcessible button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.05);
+  color: #141414;
+}
+.linkBarUtilities {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.linkBarUtilities .redes {
+  display: flex;
+  gap: 10px;
 }
 .header {
   background: #fafafa;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .headerContent {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:25px 0;
+  padding: 25px 0;
 }
 .navegacao ul {
-  display:flex;
+  display: flex;
   align-items: center;
-  gap:30px;
+  gap: 30px;
 }
-
-
+.navegacao ul li a {
+  color: #141414;
+}
 
 /* Introducao */
 .introducao {
@@ -595,4 +623,3 @@ body {
     opacity: 1;
   }
 }
-
