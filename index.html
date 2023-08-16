@@ -33,12 +33,23 @@
     </div>
     <div class="header">
       <div class="container headerContent">
-        <button class="mobileMenu"></button>
+        <button class="mobileMenuButton">
+          <div class="mobileMenu"></div>
+        </button>
         <img src="./img/logo.svg" alt="Logo DR Construtora">
         <nav class="navegacao">
           <ul>
             <li><a href="">Quem Somos</a></li>
-            <li><a href="">Como fazemos</a></li>
+            <li>
+              <button data-toggle='dropdown' class='p-2 button dropdown-toggle'>
+                Como fazemos
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="">Exêlencia</a></li>
+                <li><a href="">SGI</a></li>
+                <li><a href="">Profissionalização</a></li>
+              </ul>
+            </li>
             <li><a href="">O que Fazemos</a></li>
             <li><a href="">Capital humano</a></li>
             <li><a href="">Contato</a></li>

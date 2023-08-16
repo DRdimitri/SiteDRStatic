@@ -13,7 +13,8 @@
   --font2: #454545;
   --font3: #fafafa;
 }
-body {
+body,
+button {
   background: var(--bg-p1);
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
@@ -53,4 +54,3 @@ body {
     margin: 0 auto;
   }
 }
-
