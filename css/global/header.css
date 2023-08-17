@@ -8,7 +8,9 @@
 .linkBar a {
   color: var(--font2);
 }
-.linkBar a:hover {
+.linkBar a:hover,
+.navegacao ul li a:hover,
+.dropdown-toggle:hover {
   color: var(--p1);
 }
 .linkBar .contactBar {
@@ -50,15 +52,40 @@
   align-items: center;
   justify-content: space-between;
 }
-/* Navegação */
 .navegacao > ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 22px;
 }
+.navegacao ul button,
 .navegacao ul li a {
-  color: var(--font1);
+  padding: 3.25rem 8px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--font2);
+}
+.navegacao ul button,
+.navegacao ul li a {
+  position: relative;
+}
+.navegacao ul button:after,
+.navegacao ul li a:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background: linear-gradient(90deg, #100953 0%, #061ef4 100%);
+  position: absolute;
+  left: 3px;
+  transition: 0.3s;
+}
+.navegacao ul button:hover:after,
+.navegacao ul li a:hover:after {
+  width: 30%;
+}
+.navegacao ul .drop {
+  position: relative;
 }
 .mobileMenuButton {
   display: none;
@@ -67,27 +94,40 @@
   background: transparent;
 }
 .dropdown-toggle {
-  background-color: red;
+  background-color: transparent;
   border: none;
-  font-size: 0.875rem;
   cursor: pointer;
-  padding: 3.25rem 5px;
+  padding: 3.25rem 8px;
 }
-.dropdown-toggle:after {
-  display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid var(--p1);
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
+.dropdown-toggle:hover {
+  color: var(--p1);
 }
 .dropdown-menu {
+  min-width: 210px;
   display: none;
+  position: absolute;
+  background: var(--bg-p2);
+  border-top: 3px solid;
+  border-image: linear-gradient(90deg, var(--p1) 25%, var(--p2)) 1;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
 }
-.dropdown-toggle:hover ~ .dropdown-menu {
+.dropdown-menu li a {
   display: block;
+  padding: 20px !important;
+}
+.dropdown-menu li a:after {
+  display: none !important;
+}
+.dropdown-menu li a:hover {
+  color: var(--p1);
+  background: var(--border1);
+}
+.dropdown-menu li + li {
+  border-top: 1px var(--border1) solid;
+}
+.drop:hover .dropdown-menu {
+  display: block;
+  animation: LeftToRight 0.3s;
 }
 
 /* Responsive */
@@ -107,6 +147,9 @@
   }
   .navegacao {
     display: none;
+  }
+  .navegacao.ativo {
+    display: block;
   }
   .mobileMenuButton {
     display: block;
