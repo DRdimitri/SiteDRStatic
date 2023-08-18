@@ -33,13 +33,34 @@
     </div>
     <div class="header">
       <div class="container headerContent">
-        <button class="mobileMenu"></button>
+        <button class="mobileMenuButton">
+          <div class="mobileMenu"></div>
+        </button>
         <img src="./img/logo.svg" alt="Logo DR Construtora">
-        <nav class="navegacao">
+        <nav class="navegacao ">
           <ul>
             <li><a href="">Quem Somos</a></li>
-            <li><a href="">Como fazemos</a></li>
-            <li><a href="">O que Fazemos</a></li>
+            <li class="drop">
+              <button data-toggle='dropdown' class='p-2 button dropdown-toggle'>
+                Como Fazemos
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="">EXÊLENCIA</a></li>
+                <li><a href="">SGI</a></li>
+                <li><a href="">PROFISSIONALIZAÇÃO</a></li>
+              </ul>
+            </li>
+            <li class="drop">
+              <button data-toggle='dropdown' class='p-2 button dropdown-toggle'>
+                O QUE FAZEMOS
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="">Locação de máquinas</a></li>
+                <li><a href="">Obras Viárias</a></li>
+                <li><a href="">Infraestrutura Social</a></li>
+                <li><a href="">Saneamento</a></li>
+              </ul>
+            </li>
             <li><a href="">Capital humano</a></li>
             <li><a href="">Contato</a></li>
           </ul>

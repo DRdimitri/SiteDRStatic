@@ -12,10 +12,13 @@
   --font1: #141414;
   --font2: #454545;
   --font3: #fafafa;
+  --border1: rgba(16, 9, 83, 0.05);
 }
-body {
+body,
+button {
   background: var(--bg-p1);
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 .container {
   max-width: 1150px;
@@ -54,3 +57,14 @@ body {
   }
 }
 
+/* Animações */
+@keyframes LeftToRight {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

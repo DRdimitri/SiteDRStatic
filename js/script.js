@@ -66,3 +66,9 @@
 //   }
 // }, 5000);
 
+const menuMobile = document.querySelector(".mobileMenuButton");
+const nav = document.querySelector(".navegacao");
+
+menuMobile.addEventListener("click", () => {
+  nav.classList.toggle("ativo");
+});
