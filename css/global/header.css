@@ -60,13 +60,10 @@
 }
 .navegacao ul button,
 .navegacao ul li a {
-  padding: 3.25rem 8px;
+  padding: 3.05rem 8px;
   font-size: 0.875rem;
   text-transform: uppercase;
   color: var(--font2);
-}
-.navegacao ul button,
-.navegacao ul li a {
   position: relative;
 }
 .navegacao ul button:after,
@@ -97,7 +94,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 3.25rem 8px;
 }
 .dropdown-toggle:hover {
   color: var(--p1);
@@ -145,11 +141,47 @@
     padding: 10px 0;
     gap: 50px;
   }
+  .navegacao ul button:after,
+  .navegacao ul li a:after {
+    display: none;
+  }
   .navegacao {
     display: none;
   }
   .navegacao.ativo {
     display: block;
+    position: absolute;
+    background: linear-gradient(227deg, var(--p1) 18.5%, var(--p2) 100%);
+    top: 65px;
+    left: 0;
+  }
+  .drop:hover .dropdown-menu {
+    display: none;
+  }
+  .navegacao ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 2px 0;
+    font-size: 1rem;
+    width: 100vw;
+  }
+  .navegacao ul li,
+  .navegacao.ativo ul li button {
+    width: 100%;
+  }
+  .navegacao.ativo ul li a,
+  .navegacao.ativo ul li button {
+    padding: 10px 0px 10px 8px;
+    text-align: left;
+    color: var(--bg-p2);
+    display: block;
+    font-size: 1rem;
+  }
+  .navegacao.ativo ul li a:hover,
+  .navegacao.ativo ul li button:hover {
+    color: var(--p1);
+    background-color: var(--bg-p2);
   }
   .mobileMenuButton {
     display: block;
@@ -183,9 +215,6 @@
     width: 23px;
     height: 3px;
     box-shadow: 0px 10px 0px 0px var(--p1);
-  }
-  .mobileMenu:focus {
-    background: red;
   }
 }
 
