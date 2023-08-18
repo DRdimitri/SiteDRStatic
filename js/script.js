@@ -72,3 +72,13 @@ const nav = document.querySelector(".navegacao");
 menuMobile.addEventListener("click", () => {
   nav.classList.toggle("ativo");
 });
+
+const navBtns = document.querySelectorAll(".drop button");
+
+navBtns.forEach((e) => {
+  e.addEventListener("click", () => {
+    e["classList"].toggle("ativo");
+  });
+});
+
+console.log(navBtns);
