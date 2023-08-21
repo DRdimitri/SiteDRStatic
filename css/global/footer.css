@@ -1,0 +1,77 @@
+/* Footer */
+.footer {
+  position: relative;
+  margin-top: 150px;
+  background: white;
+  border-top: 3px solid;
+  border-image: linear-gradient(90deg, var(--p1) 30%, var(--bg-p1) 40%) 1;
+}
+.footerMapaSite ul {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.footerMapaSite ul li a:hover {
+  color: #141414;
+}
+.footerMapaSite ul li a {
+  color: rgba(20, 20, 20, 0.75);
+}
+.footer section h3 {
+  color: #454545;
+  font-size: 2rem;
+  position: relative;
+}
+.footer section h3:after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 3px;
+  display: block;
+  left: -5px;
+  background-color: #100953;
+}
+.footerContato {
+  color: #454545;
+}
+.footerContato h3 {
+  margin-bottom: 20px;
+}
+.footerContato p {
+  margin-bottom: 10px;
+}
+.endereco {
+  border-top: solid rgba(0, 0, 0, 0.2) 2px;
+  border-bottom: solid rgba(0, 0, 0, 0.2) 2px;
+  max-width: 250px;
+  line-height: 2.5rem;
+}
+.footer .redes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.direitos {
+  background-color: #100953;
+}
+.direitos p {
+  padding: 25px 0;
+  color: var(--bg-p1);
+}
+.footer .footerContent {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 50000;
+}
+.footer.sectionAsset:after {
+  background: url("../../img/assets/assetFooter.png") no-repeat center;
+  top: -390px;
+  left: 0px;
+  height: 498px;
+  width: 502px;
+  z-index: -1;
+}
+

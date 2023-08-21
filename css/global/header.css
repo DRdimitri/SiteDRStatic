@@ -52,6 +52,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.headerContent img {
+  width: 150px;
+}
 .navegacao > ul {
   display: flex;
   align-items: center;
@@ -60,7 +63,7 @@
 }
 .navegacao ul button,
 .navegacao ul li a {
-  padding: 3.05rem 8px;
+  padding: 2.5rem 8px;
   font-size: 0.875rem;
   text-transform: uppercase;
   color: var(--font2);
@@ -167,7 +170,8 @@
   .navegacao.ativo {
     display: block;
     position: absolute;
-    background: linear-gradient(227deg, var(--p1) 18.5%, var(--p2) 100%);
+    /* background: linear-gradient(227deg, var(--p1) 18.5%, var(--p2) 100%); */
+    background: var(--p1);
     top: 65px;
     left: 0;
   }
@@ -193,6 +197,9 @@
     padding: 2px 0;
     font-size: 1rem;
     width: 100vw;
+  }
+  .navegacao.ativo {
+    animation: LeftToRight 0.3s forwards;
   }
   .navegacao ul li,
   .navegacao.ativo ul li button {

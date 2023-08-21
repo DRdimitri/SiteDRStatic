@@ -18,7 +18,7 @@ body,
 button {
   background: var(--bg-p1);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1150px;
@@ -36,7 +36,7 @@ button {
 }
 .sectionAsset:after {
   content: "";
-  background: url("../img/assets/asset1.svg") no-repeat center;
+  background: url("../../img/assets/asset1.svg") no-repeat center;
   display: block;
   height: 72px;
   width: 56px;
@@ -66,5 +66,16 @@ button {
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes teste {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-30px);
+    opacity: 0;
   }
 }
