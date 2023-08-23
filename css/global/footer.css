@@ -23,17 +23,20 @@
   font-size: 2rem;
   position: relative;
 }
+.footer .logo img {
+  width: 100%;
+}
 .footer section h3:after {
   content: "";
   position: absolute;
-  width: 45%;
+  width: 30%;
   height: 3px;
   display: block;
   left: -5px;
-  background-color: #100953;
+  background: linear-gradient(90deg, var(--p1) 0%, var(--p2) 100%);
 }
 .footerContato {
-  color: #454545;
+  color: var(--font2);
 }
 .footerContato h3 {
   margin-bottom: 20px;
@@ -62,7 +65,8 @@
 .footer .footerContent {
   padding: 60px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: relative;
   z-index: 50000;
 }
@@ -73,5 +77,26 @@
   height: 498px;
   width: 502px;
   z-index: -1;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .footer .logo {
+    display: none;
+  }
+  .footer {
+    border-top: 3px solid var(--p1);
+    border-image: none;
+  }
+  .footer .footerContent {
+    gap: 50px;
+  }
+  .footerContent {
+    margin: 0 50px;
+  }
+  .footerMapaSite ul {
+    grid-template-columns: 1fr;
+  }
 }
 
