@@ -127,6 +127,7 @@
 .drop:hover .dropdown-menu {
   display: block;
   animation: LeftToRight 0.3s;
+  z-index: 100000;
 }
 
 /* Responsive */
@@ -170,7 +171,6 @@
   .navegacao.ativo {
     display: block;
     position: absolute;
-    /* background: linear-gradient(227deg, var(--p1) 18.5%, var(--p2) 100%); */
     background: var(--p1);
     top: 65px;
     left: 0;

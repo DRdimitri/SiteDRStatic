@@ -9,6 +9,7 @@
   --bg-p2: #fafafa;
   --p1: #100953;
   --p2: #061ef4;
+  --p3: #272164;
   --font1: #141414;
   --font2: #454545;
   --font3: #fafafa;
@@ -46,7 +47,7 @@ button {
 
 .pageTitle {
   font-size: 6rem;
-  color: var(--p1);
+  color: var(--p3);
   margin: 45px 0;
   position: relative;
   display: flex;
