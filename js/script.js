@@ -56,28 +56,28 @@ navBtns.forEach((e) => {
   });
 });
 
-const introSec = document.querySelectorAll(".introducao section");
-const introNav = document.querySelectorAll(".introNav button");
+// const introSec = document.querySelectorAll(".introducao section");
+// const introNav = document.querySelectorAll(".introNav button");
 
-let time = 1;
+// let time = 1;
 
-introNav.forEach((e, i) => {
-  e.addEventListener("click", () => {
-    introSec.forEach((e) => e.classList.remove("ativo"));
-    introNav.forEach((e) => e.classList.remove("ativo"));
-    introSec[i].classList.add("ativo");
-    introNav[i].classList.add("ativo");
-    time = i;
-  });
-});
+// introNav.forEach((e, i) => {
+//   e.addEventListener("click", () => {
+//     introSec.forEach((e) => e.classList.remove("ativo"));
+//     introNav.forEach((e) => e.classList.remove("ativo"));
+//     introSec[i].classList.add("ativo");
+//     introNav[i].classList.add("ativo");
+//     time = i;
+//   });
+// });
 
-setInterval(() => {
-  introSec.forEach((e) => e.classList.remove("ativo"));
-  introNav.forEach((e) => e.classList.remove("ativo"));
-  introSec[time].classList.add("ativo");
-  introNav[time].classList.add("ativo");
-  time++;
-  if (time > introSec.length - 1) {
-    time = 0;
-  }
-}, 5000);
+// setInterval(() => {
+//   introSec.forEach((e) => e.classList.remove("ativo"));
+//   introNav.forEach((e) => e.classList.remove("ativo"));
+//   introSec[time].classList.add("ativo");
+//   introNav[time].classList.add("ativo");
+//   time++;
+//   if (time > introSec.length - 1) {
+//     time = 0;
+//   }
+// }, 5000);

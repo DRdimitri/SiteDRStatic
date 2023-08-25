@@ -1,0 +1,17 @@
+.pageTitle.sectionAsset::after {
+  transform: rotate(270deg) !important;
+  /* background-color: red; */
+  position: inherit;
+}
+.quemSomos .intro {
+  display: flex;
+  margin-top: 30px;
+  /* gap: 30px; */
+}
+.quemSomos .intro h2 {
+  max-width: 520px;
+}
+.quemSomos .intro p {
+  max-width: 550px;
+}
+
