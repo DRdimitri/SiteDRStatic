@@ -19,7 +19,7 @@ body,
 button {
   background: var(--bg-p1);
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 .container {
   max-width: 1150px;
@@ -39,6 +39,7 @@ button {
 .sectionAsset:after {
   content: "";
   background: url("../../img/assets/asset1.svg") no-repeat center;
+  background-size: cover;
   display: block;
   height: 72px;
   width: 56px;
@@ -66,6 +67,38 @@ button {
   .container {
     max-width: 600px;
     margin: 0 auto;
+  }
+  .pageTitle {
+    font-size: 3rem;
+    justify-content: space-between;
+  }
+  .sectionAsset:after {
+    height: 46px;
+    width: 36px;
+  }
+  .titulo {
+    font-size: 1.75rem;
+    margin: 15px 0;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .sectionAsset:after {
+    height: 36px;
+    width: 35px;
+  }
+  .pageTitle {
+    color: var(--p3);
+    margin: 25px 0;
   }
 }
 

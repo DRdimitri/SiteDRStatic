@@ -1,0 +1,139 @@
+.timeLine {
+  margin-top: 200px;
+  background: radial-gradient(
+    258.73% 258.73% at 50% 0%,
+    var(--p1) 21.74%,
+    var(--p2) 87.5%
+  );
+  box-shadow: inset 0 100px var(--bg-p1);
+  padding-bottom: 45px;
+  position: relative;
+}
+.timeLine.sectionAsset:after {
+  content: "";
+  background: url("../../img/assets/assetPage.svg") no-repeat center;
+  display: block;
+  width: 343px;
+  height: 345px;
+  position: absolute;
+  right: 0;
+  top: -245px;
+}
+.timeLineIntro {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.timeLineIntro img {
+  /* width: 100%; */
+  /* margin: 0 auto; */
+}
+.timeLineIntro h2 {
+  font-size: 4.375rem;
+  text-transform: uppercase;
+  max-width: 300px;
+  color: rgba(255, 255, 255, 0.2);
+}
+.timeLineIntro h2 span {
+  background: linear-gradient(89deg, var(--p1) 0%, var(--p2) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.timeLineNav ul {
+  margin: 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeLineNav ul li {
+  border-bottom: 2px solid var(--bg-p2);
+}
+.timeLineNav ul li button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  color: var(--bg-p2);
+  cursor: pointer;
+}
+.timeLineNav ul li button.ativo {
+  border-bottom: 4px solid var(--bg-p2);
+}
+.contentTimeLine h3 {
+  color: var(--bg-p2);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 100px;
+}
+.contentTimeLine p {
+  color: var(--bg-p1);
+  margin: 1rem 0 3rem 150px;
+  max-width: 600px;
+  padding: 1rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 1150px) {
+  .timeLine.sectionAsset:after {
+    display: none;
+  }
+  .timeLineIntro h2 {
+    font-size: 4.375rem;
+    text-transform: uppercase;
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .timeLineIntro h2 span {
+    background: rgba(255, 255, 255, 0.2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 850px) {
+  .timeLineIntro img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .timeLineIntro h2 {
+    font-size: 2.5rem;
+  }
+  .timeLineNav ul {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .contentTimeLine p {
+    margin: 20px 0;
+    padding: 10px 0 10px 1rem;
+  }
+  .contentTimeLine h3 {
+    margin-left: 0;
+  }
+  .timeLineNav ul {
+    gap: 15px;
+  }
+  .timeLine {
+    box-shadow: inset 0 70px var(--bg-p1);
+  }
+  .timeLineNav ul li {
+    border-bottom: none;
+  }
+  .timeLineNav ul li button {
+    background: none;
+    border: 2px solid var(--bg-p1);
+    font-size: 1rem;
+    padding: 8px 14px;
+    color: var(--bg-p2);
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .timeLineNav ul li button.ativo {
+    color: var(--p1);
+    background: var(--bg-p2);
+    border: 2px solid var(--bg-p2);
+  }
+}
+
