@@ -6,7 +6,8 @@
 @import "./home/introducao.css";
 
 /* Quem Somos */
-@import "./quemSomos/intro.css";
+@import "./quemSomos/introducao.css";
+@import "./quemSomos/timeLine.css";
 
 /* Ideologia */
 .ideologia {

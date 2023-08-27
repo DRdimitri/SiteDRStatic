@@ -71,9 +71,9 @@
   z-index: 50000;
 }
 .footer.sectionAsset:after {
-  background: url("../../img/assets/assetFooter.png") no-repeat center;
+  background: url("../../img/assets/assetFooter.svg") no-repeat center;
   top: -390px;
-  left: 0px;
+  left: -70px;
   height: 498px;
   width: 502px;
   z-index: -1;
