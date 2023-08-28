@@ -121,6 +121,12 @@ button {
     color: var(--p3);
     margin: 25px 0;
   }
+  .subTitulo {
+    font-size: 2rem;
+  }
+  .subTitulo:before {
+    font-size: 3rem;
+  }
 }
 
 /* Animações */
