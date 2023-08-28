@@ -14,6 +14,7 @@
   --font2: #454545;
   --font3: #fafafa;
   --border1: rgba(16, 9, 83, 0.05);
+  --border2: rgba(0, 0, 0, 0.1);
 }
 body,
 button {
@@ -26,7 +27,6 @@ button {
   margin: 0 auto;
 }
 .titulo {
-  /* background: linear-gradient(270deg, #061df1 65%, #100953 100%); */
   background: linear-gradient(301deg, #061ef4 0%, #100953 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -45,7 +45,6 @@ button {
   width: 56px;
   position: absolute;
 }
-
 .pageTitle {
   font-size: 6rem;
   color: var(--p3);
@@ -54,6 +53,28 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.subTitulo {
+  font-size: 2rem;
+  color: var(--p1);
+  position: relative;
+  display: flex;
+}
+.subTitulo:before {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--font2);
+  opacity: 0.25;
+  bottom: 0px;
+  left: 15px;
+}
+.defaultCta {
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--font1);
+  background-color: var(--p1);
 }
 
 @media (max-width: 1150px) {

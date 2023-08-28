@@ -1,0 +1,11 @@
+.sgi .titulo {
+  max-width: 680px;
+}
+.sgiIntro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+/* sgiIntro */
+

@@ -1,0 +1,73 @@
+.servicos {
+  margin-top: 150px;
+}
+.servicos .subTitulo:before {
+  content: "Execução de Serviços";
+}
+.gridExec {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+}
+.gridExec section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid var(--bg-p1);
+  padding: 25px 22px;
+}
+.gridExec section:hover {
+  border: 1px solid var(--border2);
+}
+.gridExec section > div {
+  padding-left: 10px;
+  border-left: 2px var(--p1) solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.gridExec section h3 {
+  margin-top: 15px;
+  font-weight: 400;
+  color: var(--font1);
+  font-size: 1.5rem;
+}
+
+.gridExec section p {
+  margin-top: 20px;
+  color: var(--font2);
+  font-size: 1.125rem;
+}
+.gridExec section a {
+  margin: 70px 0 10px 15px;
+  padding: 0 5px;
+  color: var(--font2);
+  background-color: var(--bg-p1);
+}
+.gridExec section::after {
+  transition: 0.5s;
+
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--p1);
+  left: 22px;
+  bottom: 43px;
+  z-index: -1;
+}
+
+.gridExec section:hover:after {
+  width: calc(100% - 44px);
+}
+
+@media (max-width: 600px) {
+  .gridExec {
+    grid-template-columns: 1fr;
+  }
+}
+

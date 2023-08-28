@@ -1,0 +1,106 @@
+.ideologia .subTitulo:before {
+  content: "Ideologia";
+}
+.ideologia.sectionAsset:after {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+.ideologia {
+  position: relative;
+}
+
+.ideoGrid {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.ideoGrid section,
+.ideologia .last {
+  padding: 25px;
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.ideoGrid section h3,
+.ideologia .last h3 {
+  font-size: 2rem;
+  color: var(--font1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.ideoGrid section h3:before,
+.ideologia .last h3:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 8px;
+  background-color: var(--p1);
+}
+
+.ideoGrid section::before,
+.ideologia .last:before {
+  content: "";
+  width: 223px;
+  height: 223px;
+  display: block;
+  position: absolute;
+  z-index: -10;
+  right: -58px;
+  top: -68px;
+}
+.last {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+.last ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.last p {
+  max-width: 600px;
+}
+.last li {
+  position: relative;
+  font-size: 1.1rem;
+}
+.last li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: var(--p1);
+}
+
+.ideoGrid section:nth-child(1)::before {
+  background: url("../../img/quemSomos/ideologia/missao.png") no-repeat center;
+}
+.ideoGrid section:nth-child(2)::before {
+  background: url("../../img/quemSomos/ideologia/visao.png") no-repeat center;
+}
+.ideoGrid section:nth-child(3)::before {
+  background: url("../../img/quemSomos/ideologia/proposta.png") no-repeat center;
+}
+.ideoGrid section:nth-child(4)::before {
+  background: url("../../img/quemSomos/ideologia/proposito.png") no-repeat
+    center;
+}
+.ideologia .last::before {
+  background: url("../../img/quemSomos/ideologia/valores.png") no-repeat center;
+}
+
+@media (max-width: 600px) {
+  .ideoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
