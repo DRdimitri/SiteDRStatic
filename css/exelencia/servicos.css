@@ -17,8 +17,6 @@
   border-radius: 5px;
   border: 1px solid var(--bg-p1);
   padding: 25px 22px;
-}
-.gridExec section:hover {
   border: 1px solid var(--border2);
 }
 .gridExec section > div {
@@ -35,7 +33,6 @@
   color: var(--font1);
   font-size: 1.5rem;
 }
-
 .gridExec section p {
   margin-top: 20px;
   color: var(--font2);
@@ -46,25 +43,29 @@
   padding: 0 5px;
   color: var(--font2);
   background-color: var(--bg-p1);
+  display: block;
+}
+.gridExec section a span {
+  transition: 0.2s ease-in;
+  display: inline-block;
+  background: var(--bg-p1);
+}
+.gridExec section a:hover span {
+  padding-right: 5px;
+  transform: translate3d(8px, 0, 0);
 }
 .gridExec section::after {
   transition: 0.5s;
-
   content: "";
   display: block;
   position: absolute;
-  width: 0;
+  width: calc(100% - 44px);
   height: 2px;
   background-color: var(--p1);
   left: 22px;
   bottom: 43px;
   z-index: -1;
 }
-
-.gridExec section:hover:after {
-  width: calc(100% - 44px);
-}
-
 @media (max-width: 600px) {
   .gridExec {
     grid-template-columns: 1fr;
