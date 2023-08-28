@@ -1,0 +1,21 @@
+.exelencia > div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 65px;
+}
+.exelencia .titulo {
+  max-width: 730px;
+}
+.exelencia > div img {
+  border-radius: 5px;
+}
+.exIntro {
+  position: relative;
+}
+.exIntro.sectionAsset:after {
+  right: 600px;
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
