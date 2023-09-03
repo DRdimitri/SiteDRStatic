@@ -99,6 +99,9 @@
   .timeLineNav ul {
     flex-wrap: wrap;
   }
+  .timeLine {
+    margin-top: 90px;
+  }
 }
 @media (max-width: 600px) {
   .contentTimeLine p {

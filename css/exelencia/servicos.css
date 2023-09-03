@@ -66,6 +66,11 @@
   bottom: 43px;
   z-index: -1;
 }
+
+/* @media (max-width: 850px) {
+
+} */
+
 @media (max-width: 600px) {
   .gridExec {
     grid-template-columns: 1fr;
