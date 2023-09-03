@@ -1,44 +1,44 @@
-const ideoSec = document.querySelectorAll(".ideoCarrosel .container section");
+// const ideoSec = document.querySelectorAll(".ideoCarrosel .container section");
 
-const btnLeft = document.querySelector(".btnArrow.left");
-const btnRight = document.querySelector(".btnArrow.right");
+// const btnLeft = document.querySelector(".btnArrow.left");
+// const btnRight = document.querySelector(".btnArrow.right");
 
-btnRight.addEventListener("click", nextIdeo);
-btnLeft.addEventListener("click", prevIdeo);
+// btnRight.addEventListener("click", nextIdeo);
+// btnLeft.addEventListener("click", prevIdeo);
 
-let ideoIndex = 1;
+// let ideoIndex = 1;
 
-function nextIdeo() {
-  ideoSec.forEach((e) => e.classList.remove("ativo"));
-  ideoIndex++;
-  if (ideoIndex > ideoSec.length - 1) {
-    ideoIndex = 0;
-  }
-  ideoSec[ideoIndex].classList.add("ativo");
-  console.log(ideoIndex);
-}
+// function nextIdeo() {
+//   ideoSec.forEach((e) => e.classList.remove("ativo"));
+//   ideoIndex++;
+//   if (ideoIndex > ideoSec.length - 1) {
+//     ideoIndex = 0;
+//   }
+//   ideoSec[ideoIndex].classList.add("ativo");
+//   console.log(ideoIndex);
+// }
 
-function prevIdeo() {
-  ideoSec.forEach((e) => e.classList.remove("ativo"));
-  ideoIndex = ideoIndex - 1;
-  if (ideoIndex < 0) {
-    ideoIndex = ideoSec.length - 1;
-  }
-  ideoSec[ideoIndex].classList.add("ativo");
-  console.log(ideoIndex);
-}
-const compNav = document.querySelectorAll(".compNav li");
-const comp = document.querySelectorAll(".competencias article div");
-const compImgs = document.querySelectorAll(".competencias figure img");
+// function prevIdeo() {
+//   ideoSec.forEach((e) => e.classList.remove("ativo"));
+//   ideoIndex = ideoIndex - 1;
+//   if (ideoIndex < 0) {
+//     ideoIndex = ideoSec.length - 1;
+//   }
+//   ideoSec[ideoIndex].classList.add("ativo");
+//   console.log(ideoIndex);
+// }
+// const compNav = document.querySelectorAll(".compNav li");
+// const comp = document.querySelectorAll(".competencias article div");
+// const compImgs = document.querySelectorAll(".competencias figure img");
 
-compNav.forEach((e, i) => {
-  e.addEventListener("click", () => {
-    comp.forEach((e) => e.classList.remove("ativo"));
-    compImgs.forEach((e) => e.classList.remove("ativo"));
-    comp[i].classList.add("ativo");
-    compImgs[i].classList.add("ativo");
-  });
-});
+// compNav.forEach((e, i) => {
+//   e.addEventListener("click", () => {
+//     comp.forEach((e) => e.classList.remove("ativo"));
+//     compImgs.forEach((e) => e.classList.remove("ativo"));
+//     comp[i].classList.add("ativo");
+//     compImgs[i].classList.add("ativo");
+//   });
+// });
 
 const menuMobile = document.querySelector(".mobileMenuButton");
 const nav = document.querySelector(".navegacao");
