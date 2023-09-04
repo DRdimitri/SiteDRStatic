@@ -44,9 +44,6 @@
     flex-direction: column;
     gap: 25px;
   }
-  .exelencia {
-    /* margin-bottom: 0px; */
-  }
   .exIntro div.sectionAsset:after {
     left: 0;
     transform: rotate(90deg);

@@ -27,6 +27,7 @@
 //   ideoSec[ideoIndex].classList.add("ativo");
 //   console.log(ideoIndex);
 // }
+
 // const compNav = document.querySelectorAll(".compNav li");
 // const comp = document.querySelectorAll(".competencias article div");
 // const compImgs = document.querySelectorAll(".competencias figure img");

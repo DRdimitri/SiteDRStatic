@@ -7,5 +7,18 @@
   justify-content: space-between;
   gap: 50px;
 }
-/* sgiIntro */
+.sgiIntro img {
+  width: 100%;
+}
+
+/* Rsponsive */
+@media (max-width: 1150px) {
+  .sgiIntro img {
+    margin-top: 20px;
+  }
+  .sgiIntro {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
 

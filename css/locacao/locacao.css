@@ -1,0 +1,55 @@
+.locacao section:nth-child(even) {
+  background-color: var(--p1);
+  box-shadow: inset 250px 0 var(--bg-p1);
+}
+.locacao section:nth-child(even) h2 {
+  color: var(--font3);
+}
+.locacao section:nth-child(even) h2::before {
+  background-color: white;
+}
+.locacao section + section {
+  margin-top: 50px;
+}
+.locacao section {
+  padding: 30px 0;
+}
+.locacao section > div.container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.locacao section h2 {
+  font-size: 1.55rem;
+  color: var(--font1);
+}
+.locacao section h2:before {
+  content: "";
+  width: 30px;
+  height: 8px;
+  display: block;
+  background: var(--p1);
+}
+.locacao .container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.locacao section > div p {
+  max-width: 500px;
+  color: #595959;
+}
+.locacao section .btnDefault,
+.locacao section .btnDefault a {
+  margin: 0;
+  text-align: left;
+  padding: 0;
+}
+
+.locacao section .btnDefault a {
+  margin: 15px 0px;
+  text-align: left;
+  padding: 8px 5px;
+  font-size: 1.2rem;
+}
+

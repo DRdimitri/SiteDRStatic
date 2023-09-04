@@ -8,7 +8,7 @@
 @import "./home/introducao.css";
 
 /* Quem Somos */
-@import "./quemSomos/introducao.css";
+@import "./quemSomos/quemSomos.css";
 @import "./quemSomos/timeLine.css";
 @import "./quemSomos/ideologia.css";
 
@@ -18,6 +18,13 @@
 
 /* SGI */
 @import "./sgi/sgi.css";
+@import "./sgi/compromisso.css";
+
+/* Profissionalização */
+@import "./profissionalizacao/profissionalizacao.css";
+
+/* locacao */
+@import "./locacao/locacao.css";
 
 /* Ideologia */
 .ideologia {
@@ -322,7 +329,7 @@
 .clientes li:nth-child(n + 5) {
   border-top: 1px rgba(0, 0, 0, 0.1) solid;
 }
-.clientes a {
+.btnDefault a {
   transition: 0.2s;
   padding: 10px 30px;
   font-size: 1.4rem;
@@ -331,16 +338,14 @@
   color: var(--bg-p2);
   border-radius: 4px;
   border: solid rgba(0, 0, 0, 0.2) 1px;
+  display: inline-block;
 }
-.clientes a:hover {
+.btnDefault a:hover {
   box-shadow: 0px 0px 6px 2px #061df1;
 }
-.tes {
+.btnDefault {
   margin-top: 50px;
   text-align: center;
-}
-.tes a {
-  display: inline-block;
 }
 
 /* Animações */
