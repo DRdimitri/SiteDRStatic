@@ -21,6 +21,16 @@ button {
   background: var(--bg-p1);
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[src$=".png"] {
+  border-radius: 4px;
+}
+
 .container {
   max-width: 1150px;
   margin: 0 auto;
@@ -32,28 +42,15 @@ button {
   background-clip: text;
   font-size: 2.25rem;
 }
-.imgStyle {
-  border-radius: 4px;
-}
-.sectionAsset:after {
-  content: "";
-  background: url("../../img/assets/asset1.svg") no-repeat center;
-  background-size: cover;
-  display: block;
-  height: 72px;
-  width: 56px;
-  position: absolute;
-}
 .pageTitle {
   font-size: 6rem;
   color: var(--p3);
-  margin: 45px 0;
-  position: relative;
+  margin: 40px 0;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .subTitulo {
   font-size: 2rem;
   color: var(--p1);
@@ -68,12 +65,31 @@ button {
   bottom: 0px;
   left: 15px;
 }
-.defaultCta {
-  padding: 10px 30px;
-  text-align: center;
+.btnDefault a {
+  transition: 0.2s;
+  padding: 10px 50px;
+  font-size: 1rem;
   font-weight: bold;
-  color: var(--font1);
-  background-color: var(--p1);
+  background: linear-gradient(180deg, var(--p1) -50%, var(--p1) 100%);
+  color: var(--bg-p2);
+  border-radius: 4px;
+  display: inline-block;
+}
+.btnDefault a:hover {
+  background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 829.17%);
+}
+.btnDefault.seta a:after {
+  content: "➜";
+  display: inline-block;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+.btnDefault.seta a:hover:after {
+  transform: translateX(5px);
+}
+.btnDefault {
+  margin-top: 50px;
+  text-align: center;
 }
 
 @media (max-width: 1150px) {
@@ -92,10 +108,6 @@ button {
     font-size: 3rem;
     justify-content: space-between;
   }
-  .sectionAsset:after {
-    height: 46px;
-    width: 36px;
-  }
   .titulo {
     font-size: 1.75rem;
     margin: 15px 0;
@@ -111,10 +123,6 @@ button {
   .container {
     max-width: 300px;
     margin: 0 auto;
-  }
-  .sectionAsset:after {
-    height: 36px;
-    width: 35px;
   }
   .pageTitle {
     color: var(--p3);

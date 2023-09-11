@@ -1,3 +1,6 @@
+.profissionalizacao .pageTitle:after {
+  transform: rotate(270deg) !important;
+}
 .profissionalizacao p {
   max-width: 850px;
   font-size: 1rem;
@@ -25,9 +28,6 @@
   background-image: url("../../img/assets/asset5.svg");
   background-size: cover;
   z-index: -1;
-}
-.sistemProf img {
-  border-radius: 4px;
 }
 .sistemProf h3 {
   color: var(--bg-p1);
@@ -69,13 +69,13 @@
     bottom: 0;
     top: auto;
   }
-  .profissionalizacao .pageTitle.sectionAsset::after {
+  /* .profissionalizacao .pageTitle. ::after {
     left: 0;
     width: 50px;
     height: 50px;
     right: auto;
     bottom: 0;
-  }
+  } */
   .profissionalizacao .pageTitle {
     font-size: 2.5rem;
   }

@@ -1,15 +1,9 @@
 .ideologia .subTitulo:before {
   content: "Ideologia";
 }
-.ideologia.sectionAsset:after {
-  top: 0;
-  right: 0;
-  transform: rotate(90deg);
-}
 .ideologia {
   position: relative;
 }
-
 .ideoGrid {
   margin-top: 90px;
   display: grid;

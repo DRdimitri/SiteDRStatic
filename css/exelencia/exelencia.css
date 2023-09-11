@@ -16,24 +16,12 @@
 .exIntro div {
   position: relative;
 }
-.exIntro div.sectionAsset:after {
-  left: 0;
-  transform: rotate(90deg);
-  bottom: 0;
-}
 
 /* Resposive */
 
 @media (max-width: 850px) {
   .exelencia .pageTitle {
     margin-bottom: 60px;
-  }
-  .exelencia .pageTitle.sectionAsset:after {
-    width: 50px;
-    height: 50px;
-    bottom: -55px;
-    left: 0 !important;
-    transform: rotate(0);
   }
   .exIntro img {
     width: 305px;
@@ -43,11 +31,6 @@
     align-items: center;
     flex-direction: column;
     gap: 25px;
-  }
-  .exIntro div.sectionAsset:after {
-    left: 0;
-    transform: rotate(90deg);
-    bottom: -45px;
   }
 }
 

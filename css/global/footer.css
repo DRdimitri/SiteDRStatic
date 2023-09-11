@@ -70,7 +70,8 @@
   position: relative;
   z-index: 50000;
 }
-.footer.sectionAsset:after {
+.footer:after {
+  content: "";
   background: url("../../img/assets/assetFooter.svg") no-repeat center;
   background-size: cover;
   top: -332px;
@@ -78,19 +79,17 @@
   width: 368px;
   height: 330px;
   z-index: -1;
+  display: block;
+  position: absolute;
 }
 
 /* Responsive */
 
 @media (max-width: 850px) {
-  .footer.sectionAsset:after {
-    background: url("../../img/assets/assetFooter.svg") no-repeat center;
-    background-size: cover;
+  .footer:after {
     top: -225px;
-    left: 0;
     width: 268px;
     height: 245px;
-    z-index: -1;
   }
   .footer .logo {
     display: none;
