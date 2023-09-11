@@ -43,7 +43,7 @@
 .introNav button:hover {
   background-color: #100953;
 }
-.introducao.sectionAsset:after {
+.introducao. :after {
   bottom: -60px;
   left: 50px;
 }

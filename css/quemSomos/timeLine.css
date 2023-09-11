@@ -9,7 +9,7 @@
   padding-bottom: 45px;
   position: relative;
 }
-.timeLine.sectionAsset:after {
+.timeLine:after {
   content: "";
   background: url("../../img/assets/assetPage.svg") no-repeat center;
   display: block;
@@ -71,7 +71,7 @@
   border-left: 2px solid rgba(255, 255, 255, 0.2);
 }
 @media (max-width: 1150px) {
-  .timeLine.sectionAsset:after {
+  .timeLine:after {
     display: none;
   }
   .timeLineIntro h2 {
