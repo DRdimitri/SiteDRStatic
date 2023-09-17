@@ -1,0 +1,81 @@
+.detalhe {
+  margin-top: 70px;
+}
+.detalhe:before {
+  content: "";
+  width: 66px;
+  height: 44px;
+  background-image: url("../../img/assets/asset1.svg");
+  display: block;
+  background-size: cover;
+  margin-left: -15px;
+}
+.detalhe h2 {
+  max-width: 850px;
+  margin: 30px 0;
+  color: var(--p1);
+  font-size: 1.8rem;
+}
+.detalhe section {
+  display: flex;
+  gap: 30px;
+}
+.detalhe section > div {
+  max-width: 565px;
+}
+.detalhe section > div div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.detalhe section p {
+  margin-bottom: 20px;
+}
+.detalhe section h3 {
+  font-size: 1.8rem;
+  color: var(--p1);
+}
+
+.detalhe section ul {
+  margin-top: 20px;
+  background: var(--p1);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detalhe section ul li {
+  font-weight: bold;
+  color: var(--bg-p1);
+}
+.detalhe section ul li span {
+  font-weight: normal;
+  color: var(--bg-p1);
+  opacity: 0.5;
+}
+
+/* responsive */
+@media (max-width: 1150px) {
+  .detalhe h2 {
+    max-width: 100%;
+  }
+  .detalhe section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .detalhe section > div div {
+    gap: 30px;
+    overflow-x: scroll;
+  }
+  .detalhe h2 {
+    max-width: 850px;
+    margin: 30px 0;
+    color: var(--p1);
+    font-size: 1.5rem;
+  }
+}
+
