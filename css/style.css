@@ -29,6 +29,12 @@
 /* obras */
 @import "./obras/obras.css";
 
+/* detalhe Obras */
+@import "./detalhe/detalhe.css";
+
+/* Capital Humano */
+@import "./capital/capital.css";
+
 /* Ideologia */
 .ideologia {
   margin-top: 145px;

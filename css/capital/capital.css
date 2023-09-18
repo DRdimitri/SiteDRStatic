@@ -1,0 +1,10 @@
+.capital {
+  display: flex;
+}
+.capital > p {
+  max-width: 700px;
+}
+.capital > h2 {
+  max-width: 300px;
+}
+

@@ -54,25 +54,27 @@
   gap: 35px;
   flex-wrap: wrap;
 }
-.last ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
 .last p {
   max-width: 600px;
 }
 .last li {
-  position: relative;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.last li::after {
+.last li::before {
   content: "";
   display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
+  width: 8px;
+  height: 8px;
   background: var(--p1);
+  border-radius: 10px;
+}
+.last ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
 
 .ideoGrid section:nth-child(1)::before {
@@ -94,6 +96,9 @@
 
 @media (max-width: 600px) {
   .ideoGrid {
+    grid-template-columns: 1fr;
+  }
+  .last ul {
     grid-template-columns: 1fr;
   }
 }
