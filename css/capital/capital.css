@@ -1,4 +1,5 @@
 .capital {
+  margin: 100px;
   display: flex;
 }
 .capital > p {

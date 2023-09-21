@@ -1,0 +1,47 @@
+.vagastitulo h2 {
+  text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+  font-size: 1.75rem;
+  color: var(--font1);
+}
+.vagas {
+  margin-top: 60px;
+  background: var(--p1);
+  box-shadow: inset 0 25px var(--bg-p1);
+  padding-bottom: 40px;
+}
+.navVagas {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.vagaType {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.vagaType div h3 {
+  font-size: 2rem;
+  color: var(--font3);
+}
+.vagaType div p {
+  margin-top: 20px;
+  max-width: 620px;
+  padding: 10px 0 18px 0;
+  color: var(--font3);
+  border-top: 2px solid var(--font2);
+  border-bottom: 2px solid var(--font2);
+}
+.navVagas a {
+  display: block;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, var(--p1) -50%, var(--p1) 100%);
+  color: var(--font3);
+}
+.navVagas a:hover {
+  background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 829.17%);
+}
+
