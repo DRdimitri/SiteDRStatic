@@ -1,9 +1,6 @@
 .nossoCompromisso {
   margin-top: 90px;
 }
-.nossoCompromisso .subTitulo:before {
-  content: "Nosso Compromisso";
-}
 .nossoCompromisso .subTitulo {
   margin-bottom: 30px;
 }

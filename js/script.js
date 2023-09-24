@@ -82,3 +82,14 @@ navBtns.forEach((e) => {
 //     time = 0;
 //   }
 // }, 5000);
+
+const vagasButton = document.querySelectorAll(".navVagas button");
+const vagasType = document.querySelectorAll(".vagaType section");
+
+vagasButton.forEach((e, i) => {
+  e.addEventListener("click", () => {
+    vagasType.forEach((e) => e.classList.remove("ativo"));
+    console.log(vagasType[i]);
+    vagasType[i].classList.add("ativo");
+  });
+});

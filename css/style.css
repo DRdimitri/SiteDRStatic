@@ -35,6 +35,7 @@
 /* Capital Humano */
 @import "./capital/capital.css";
 @import "./capital/vagas.css";
+@import "./capital/pessoal.css";
 
 /* Ideologia */
 .ideologia {
