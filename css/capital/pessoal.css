@@ -1,0 +1,28 @@
+.pessoal {
+  margin-top: 150px;
+}
+.pessoal > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.pessoal > div p {
+  margin-top: 1rem;
+}
+.pessoal > div h3 {
+  margin-top: 50px;
+}
+.pessoal > div h3,
+.pessoal > div p {
+  text-align: right;
+}
+
+@media (max-width: 850px) {
+  .pessoal > div {
+    flex-direction: column;
+  }
+  .pessoal > div {
+    gap: 0;
+  }
+}
+

@@ -1,0 +1,68 @@
+.forms {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.into {
+  display: flex;
+  gap: 30px;
+}
+.into div {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+.forms form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.forms form div input,
+.forms form div textarea {
+  resize: none;
+  font-size: 1rem;
+  padding: 12px;
+  min-width: 250px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: 1px solid transparent;
+  background-color: #f7f7f7;
+}
+.forms form div input:focus,
+.forms form div textarea:focus {
+  outline: none;
+  border: 1px solid #061ef4;
+  box-shadow: 0 0 0 2px #061ef457;
+}
+.forms form button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--p1);
+  color: var(--font3);
+  cursor: pointer;
+}
+#email,
+#mensagem {
+  margin-bottom: 25px;
+}
+@media (max-width: 850px) {
+  .into {
+    flex-direction: column;
+    gap: 0;
+  }
+  .into div:last-child {
+    margin: 0;
+  }
+  #telefone {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .forms form div input,
+  .forms form div textarea {
+    min-width: 200px;
+  }
+}
+

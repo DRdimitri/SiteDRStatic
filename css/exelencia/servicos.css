@@ -1,9 +1,6 @@
 .servicos {
   margin-top: 150px;
 }
-.servicos .subTitulo:before {
-  content: "Execução de Serviços";
-}
 .gridExec {
   margin-top: 80px;
   display: grid;

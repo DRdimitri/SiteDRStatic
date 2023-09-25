@@ -1,0 +1,84 @@
+.contato {
+  display: flex;
+  justify-content: center;
+}
+.contato section {
+  padding: 30px;
+}
+.enderecos {
+  border-radius: 4px 0px 0px 4px;
+  background: var(--p1);
+}
+.enderecos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--font3);
+}
+.enderecos p,
+.emails a,
+.tel a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  color: var(--font3);
+}
+.enderecos p:first-child::before {
+  content: "";
+  background-image: url("../../img/contato/MapPin.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.enderecos p::before,
+.emails a:before,
+.tel a:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--p1);
+}
+.forms {
+  border-radius: 0px 4px 4px 0px;
+  background: white;
+}
+.emails {
+  margin: 30px 0;
+}
+.emails a {
+  margin: 10px 0;
+  font-style: normal;
+  color: var(--font3);
+}
+.emails a:first-child::before {
+  content: "";
+  background-image: url("../../img/contato/Envelope.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.tel a:first-child::before {
+  content: "";
+  background-image: url("../../img/contato/Phone.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.red {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 850px) {
+  .contato {
+    flex-direction: column;
+  }
+  .forms {
+    border-radius: 0px 0px 4px 4px;
+  }
+  .enderecos {
+    border-radius: 4px 4px 0px 0px;
+    background: var(--p1);
+  }
+}
+

@@ -57,14 +57,6 @@ img[src$=".png"] {
   position: relative;
   display: flex;
 }
-.subTitulo:before {
-  position: absolute;
-  font-size: 4rem;
-  color: var(--font2);
-  opacity: 0.25;
-  bottom: 0px;
-  left: 15px;
-}
 .btnDefault a {
   transition: 0.2s;
   padding: 10px 50px;

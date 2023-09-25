@@ -1,11 +1,24 @@
 .capital {
-  margin: 100px;
+  margin: 100px auto 150px auto;
   display: flex;
+  gap: 50px;
 }
 .capital > p {
   max-width: 700px;
 }
 .capital > h2 {
   max-width: 300px;
+}
+@media (max-width: 1150px) {
+  .capital {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .capital > h2 {
+    margin-bottom: 20px;
+  }
+  .capital > p {
+    margin-bottom: 50px;
+  }
 }
 

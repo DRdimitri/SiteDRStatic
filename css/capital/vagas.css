@@ -1,15 +1,9 @@
-.vagastitulo h2 {
-  text-align: center;
-  max-width: 500px;
-  margin: 30px auto;
-  font-size: 1.75rem;
-  color: var(--font1);
-}
 .vagas {
   margin-top: 60px;
   background: var(--p1);
   box-shadow: inset 0 25px var(--bg-p1);
   padding-bottom: 40px;
+  position: relative;
 }
 .navVagas {
   margin-bottom: 50px;
@@ -17,7 +11,22 @@
   justify-content: center;
   gap: 40px;
 }
-.vagaType {
+.navVagas button {
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 0px 4px var(--bg-p1);
+  transition: 0.2s;
+  color: var(--font3);
+  background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 829.17%);
+}
+.navVagas button:hover {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.vagaType section {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -31,17 +40,36 @@
   max-width: 620px;
   padding: 10px 0 18px 0;
   color: var(--font3);
-  border-top: 2px solid var(--font2);
-  border-bottom: 2px solid var(--font2);
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
-.navVagas a {
-  display: block;
-  padding: 20px 30px;
-  border-radius: 5px;
-  background: linear-gradient(180deg, var(--p1) -50%, var(--p1) 100%);
-  color: var(--font3);
+.vagaType .btnDefault {
+  text-align: left;
 }
-.navVagas a:hover {
-  background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 829.17%);
+.vagaType .btnDefault a {
+  color: var(--font1);
+  background: linear-gradient(180deg, #f1f1f1 0%, #f1f1f1 100%);
+}
+.vagaType .btnDefault a:hover {
+  background: linear-gradient(
+    179deg,
+    #f1f1f1 0.49%,
+    rgba(20, 20, 20, 0.1) 697.41%
+  );
+}
+.vagaType section.ativo {
+  display: flex;
+}
+.vagaType section {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .navVagas {
+    flex-direction: column;
+  }
+  .vagaType section {
+    flex-direction: column;
+  }
 }
 
